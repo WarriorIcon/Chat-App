@@ -7,7 +7,7 @@ const {username, room} = Qs.parse(location.search, {
 })
 
 // Join chatroom
-// socket.emit('join room', formatMessage('USER', message)) //pick up here tomorrow
+socket.emit('joinRoom', {username, room})
 
 // Message from server
 socket.on('message', message => {
