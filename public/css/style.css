@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/* CSS Variables set to easily reskin colors  */
 :root {
 	--dark-color-a: #667aff;
 	--dark-color-b: #7386ff;
