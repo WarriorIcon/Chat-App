@@ -21,7 +21,7 @@ io.on('connection', socket => {
         socket.join(user.room)
 
          //welcome the new user client-side
-        socket.emit('message', formatMessage(botName, "Welcome to Chatcord"));
+        socket.emit('message', formatMessage(botName, "Welcome to HappyChat"));
 
         //broadcast to all users in the room about when new clients connect. 
         socket.broadcast.to(user.room).emit(
